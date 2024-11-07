@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace Cafeteria
+﻿namespace Cafeteria
 {
     public class Order : Menu
     {

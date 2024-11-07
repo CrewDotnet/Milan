@@ -1,6 +1,4 @@
-﻿using System.Threading.Channels;
-
-namespace Cafeteria
+﻿namespace Cafeteria
 {
     public class Menu
     {
