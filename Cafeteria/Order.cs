@@ -8,14 +8,14 @@
         {
             if (cupNumber == 1 && coffeeNumber > 0 && coffeeNumber <= ListOfCoffees.Count)
             {
-                var regularCoffee = new RegularCoffee(ListOfCupSizes[cupNumber - 1] + " " + ListOfCoffees[coffeeNumber - 1]);
-                LastOrderMessage = $"You ordered {regularCoffee.Name} coffee and it costs {regularCoffee.DisplayPrice()}";
+                var regularCoffee = new RegularCoffee(CreateCoffeNameFromInput(coffeeNumber, cupNumber));
+                LastOrderMessage = $"You ordered {regularCoffee.CoffeeName} and it costs {regularCoffee.DisplayPrice()}";
                 Console.WriteLine(LastOrderMessage);
             }
             else if (cupNumber == 2 && coffeeNumber > 0 && coffeeNumber <= ListOfCoffees.Count)
             {
-                var largeCoffee = new LargeCoffee(ListOfCupSizes[cupNumber - 1] + " " + ListOfCoffees[coffeeNumber - 1]);
-                LastOrderMessage = $"You ordered {largeCoffee.Name} coffee and it costs {largeCoffee.DisplayPrice()}";
+                var largeCoffee = new LargeCoffee(CreateCoffeNameFromInput(coffeeNumber, cupNumber));
+                LastOrderMessage = $"You ordered {largeCoffee.CoffeeName} and it costs {largeCoffee.DisplayPrice()}";
                 Console.WriteLine(LastOrderMessage);
             }
             else

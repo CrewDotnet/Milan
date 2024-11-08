@@ -1,10 +1,8 @@
 ﻿namespace Cafeteria
 {
-    public abstract class Coffee
+    public class Coffee
     {
-        public string Name { get; set; }
+        public string CoffeeName { get; set; }
         public decimal BasePrice { get; } = 2;
-
-        public abstract string DisplayPrice();
     }
 }

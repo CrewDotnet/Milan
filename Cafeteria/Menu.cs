@@ -50,5 +50,10 @@
                 return 0;
             }
         }
+
+        public string CreateCoffeNameFromInput (int selectedCoffee, int selectedCupSize)
+        {
+            return ListOfCupSizes[selectedCupSize - 1] + " " + ListOfCoffees[selectedCoffee - 1];
+        }
     }
 }

@@ -1,7 +1,8 @@
 ﻿namespace Cafeteria
 {
-    interface IPriceCalculation
+    interface ICoffeePrice
     {
         decimal PriceCalculation();
+        string DisplayPrice();
     }
 }

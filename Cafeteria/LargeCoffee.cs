@@ -1,10 +1,14 @@
 ﻿namespace Cafeteria
 {
-    class LargeCoffee : Coffee, IPriceCalculation  //public
+    public class LargeCoffee : Coffee, ICoffeePrice
     {
-        public LargeCoffee(string name)
+        public LargeCoffee()
         {
-            Name = name;
+            
+        }
+        public LargeCoffee(string coffeeName)
+        {
+            CoffeeName = coffeeName;
         }
 
         public decimal PriceCalculation()
@@ -12,7 +16,7 @@
             return BasePrice * 1.2m;
         }
 
-        public override string DisplayPrice()
+        public string DisplayPrice()
         {
             var currencyFormat = PriceCalculation().ToString("c");
             return String.Format(currencyFormat);
