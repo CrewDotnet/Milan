@@ -51,7 +51,7 @@
             }
         }
 
-        public string CreateCoffeNameFromInput (int selectedCoffee, int selectedCupSize)
+        public string GetCoffeNameFromInput (int selectedCoffee, int selectedCupSize)
         {
             return ListOfCupSizes[selectedCupSize - 1] + " " + ListOfCoffees[selectedCoffee - 1];
         }
